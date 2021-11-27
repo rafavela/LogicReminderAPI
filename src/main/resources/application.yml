@@ -1,2 +1,7 @@
 server: 
   port : 8083
+
+reminder: 
+  phraseEndpoint : http://localhost:8082/reminder/v1/expression?id=
+  countEndpoint : http://localhost:8082/reminder/v1/length
+  minInteger : 1
