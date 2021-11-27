@@ -2,6 +2,8 @@ package com.dragonfruit.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,5 +20,10 @@ public class LogicReminderController {
 	@GetMapping
 	public ReminderBean doGet(){
 		return logicReminderService.getReminderBean();
+	}
+
+	@PostMapping
+	public ReminderBean saveReminder(@RequestBody ReminderBean reminderBean) {
+		return logicReminderService.saveReminderBean(reminderBean);
 	}
 }

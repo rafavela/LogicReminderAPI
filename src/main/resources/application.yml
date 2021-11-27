@@ -4,4 +4,5 @@ server:
 reminder: 
   phraseEndpoint : http://localhost:8082/reminder/v1/expression?id=
   countEndpoint : http://localhost:8082/reminder/v1/length
+  saveEndpont : http://localhost:8084/AdminReminder/v1/save
   minInteger : 1
