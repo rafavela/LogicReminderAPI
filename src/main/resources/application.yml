@@ -2,7 +2,11 @@ server:
   port : 8083
 
 reminder: 
-  phraseEndpoint : http://localhost:8082/reminder/v1/expression?id=
-  countEndpoint : http://localhost:8082/reminder/v1/length
-  saveEndpont : http://localhost:8084/AdminReminder/v1/save
+  phraseEndpoint : http://learner-service/reminder/v1/expression?id=
+  countEndpoint : http://learner-service/reminder/v1/length
+  saveEndpont : http://admin-service/AdminReminder/v1/save
   minInteger : 1
+
+spring: 
+  application:
+    name: logic-service
