@@ -10,3 +10,5 @@ reminder:
 spring: 
   application:
     name: logic-service
+  config:
+    import: optional:configserver:http://localhost:8889
